@@ -30,25 +30,8 @@ module.exports = function(request, response) {
   // debugging help, but you should always be careful about leaving stray
   // console.logs in your code.
   console.log("Serving request type " + request.method + " for url " + request.url);
-  //console.log(request);
-  //   request({
-  //     url: '127.0.0.1:3000/classes/messages', //URL to hit
-  //     qs: {from: 'blog example', time: +new Date()}, //Query string data
-  //     method: 'GET', //Specify the method
-  //     headers: { //We can define headers too
-  //         'Content-Type': 'MyContentType',
-  //         'Custom-Header': 'Custom Value'
-  //     }
-  // }, function(error, response, body){
-  //     if(error) {
-  //         console.log(error);
-  //     } else {
-  //         console.log(response.statusCode, body);
-  //     }
-  // });
-  // var data = {
-  //   results: []
-  // };
+  
+
 
   // The outgoing status.
   
@@ -88,9 +71,6 @@ module.exports = function(request, response) {
   } else if (request.method === 'OPTIONS') {
       utils.sendResponse(response, null);
   } 
-  //else {
-  //  sendResponse(response, "Not found", 404);
-  // }
 
 };
 

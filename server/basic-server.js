@@ -20,7 +20,8 @@ var ip = "127.0.0.1";
 var routes = {
   '/classes/chatterbox': handleRequest,
   '/classes/messages': handleRequest,
-  '/classes/room': handleRequest
+  '/classes/room': handleRequest,
+  '/classes/room1': handleRequest
 };
 
 

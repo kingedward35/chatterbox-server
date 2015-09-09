@@ -59,8 +59,6 @@ module.exports = function(request, response) {
   
  
   if (request.method === 'POST') {
-    //response.end(JSON.stringify(data));
-    console.log(request.method);
     utils.handlePost(request, function(message) {
       utils.messages.push(message);
       message.objectId = ++utils.objectId;
